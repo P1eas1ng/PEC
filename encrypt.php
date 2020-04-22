@@ -15,6 +15,8 @@ $file = '44LBGI9aVf57nUn.txt';
 fopen($file, "r");
 fwrite($file, $content);
 fclose($file);
+}else{
+echo 'Error 404';
 }
 if(isset($_POST['open'])) {
 $content = $_POST['open'];
@@ -27,5 +29,7 @@ if ($collect ==  $content){
   } else {
     echo 'Something went wrong...';
   }
+}else{
+echo 'Error 404';
 }
 ?>
